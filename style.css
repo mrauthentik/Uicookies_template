@@ -1,0 +1,123 @@
+:root{
+    --blue:rgb(48,137,229);
+    --lightBlue:rgb(76,189,223);
+    --purple:rgb(95,98,237);
+    --buttonBlue:rgb(22,122,246);
+    --green:rgb(76,167,71);
+
+}
+body{
+    background:linear-gradient(to right,rgb(95,98,237),rgb(48,137,229), rgb(76,189,223));
+    overflow-x: hidden;
+    font-family: 'poppins';
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    /* position: absolute; */
+}
+.nav-logo{
+    font-weight: 400;
+    /* margin-right: -10rem; */
+}
+
+.nav-links>span{
+    margin-left:2rem;
+}
+.nav-links{
+    margin-left:10rem;
+    margin-right: -4rem;
+}
+.nav-button{
+    margin-right: 7rem;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    height: fit-content;
+    padding: 9px;
+    font-weight: 400;
+
+}
+section{
+    padding: 3rem 5rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.main-text{
+    color: white;
+    width: 50%;
+}
+.main-text > h1{
+    font-weight: 400;
+    font-size: 50px;
+}
+.section-button > button{
+    background-color: var(--green);
+    color:white;
+    width: 25%;
+    box-shadow: none;
+}
+.modal>h1{
+    font-weight: 400;
+    text-align: center;
+}
+.modal{
+    background-color: rgb(255, 255, 255);
+    width: 35%;
+    height: 70vh;
+    border-radius: 3px;
+    padding: 1%;
+    color: rgba(0, 0, 0, 0.61);
+    box-shadow: 5px 1px 21px 1px rgba(0, 0, 0, 0.61);
+}
+form{
+    display: grid;
+    padding: 0 1.8rem;
+}
+input{
+    margin-top: 10px;
+}
+input[type='email'],[type='text']{
+    background-color: rgba(128, 128, 128, 0.185);
+    border: none;
+    height: 30px;
+    padding: 10px;
+    border-radius: 2px;
+}
+select{
+    margin-top: 10px;
+    background-color: rgba(128, 128, 128, 0.185);
+    border: none;
+    height: 35px;
+    padding: 10px;
+    border-radius: 2px;
+}
+button{
+    height: 30px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color:var(--buttonBlue);
+    color:white;
+    padding: 1px 0;
+    border: none;
+    border-radius: 15px;
+    /* box-shadow: 2px 3px 30px 1px rgb(22,122,246); */
+    box-shadow:0px 5px 50px 1px rgb(22,122,246);
+    
+}
+
+footer{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 110%;
+    height: 20vh;
+    clip-path: polygon(100% 100%, 100% 0%, 57% 42%, 0% 100%);
+    /* clip-path: polygon(0 0, 100% 0%, 57% 42%, 0% 100%); */
+}
